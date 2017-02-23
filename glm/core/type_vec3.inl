@@ -609,6 +609,15 @@ namespace detail
 	}
 
 	//////////////////////////////////////
+    // l-value access
+
+	template <typename T> GLM_FUNC_QUALIFIER tvec2<T>& tvec3<T>::_xy() { return *reinterpret_cast<tvec2<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER tvec2<T>& tvec3<T>::_yz() { return *reinterpret_cast<tvec2<T>*>(&y); }
+
+	template <typename T> GLM_FUNC_QUALIFIER const tvec2<T>& tvec3<T>::_xy() const { return *reinterpret_cast<const tvec2<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER const tvec2<T>& tvec3<T>::_yz() const { return *reinterpret_cast<const tvec2<T>*>(&y); }
+
+	//////////////////////////////////////
 	// Binary arithmetic operators
 
 	template <typename T> 

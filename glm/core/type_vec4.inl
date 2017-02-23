@@ -765,6 +765,24 @@ namespace detail
 	}
 
 	//////////////////////////////////////
+    // l-value access
+
+	template <typename T> GLM_FUNC_QUALIFIER tvec3<T>& tvec4<T>::_xyz() { return *reinterpret_cast<tvec3<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER tvec3<T>& tvec4<T>::_yzw() { return *reinterpret_cast<tvec3<T>*>(&y); }
+
+	template <typename T> GLM_FUNC_QUALIFIER const tvec3<T>& tvec4<T>::_xyz() const { return *reinterpret_cast<const tvec3<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER const tvec3<T>& tvec4<T>::_yzw() const { return *reinterpret_cast<const tvec3<T>*>(&y); }
+
+	template <typename T> GLM_FUNC_QUALIFIER tvec2<T>& tvec4<T>::_xy() { return *reinterpret_cast<tvec2<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER tvec2<T>& tvec4<T>::_yz() { return *reinterpret_cast<tvec2<T>*>(&y); }
+	template <typename T> GLM_FUNC_QUALIFIER tvec2<T>& tvec4<T>::_zw() { return *reinterpret_cast<tvec2<T>*>(&z); }
+
+	template <typename T> GLM_FUNC_QUALIFIER const tvec2<T>& tvec4<T>::_xy() const { return *reinterpret_cast<const tvec2<T>*>(&x); }
+	template <typename T> GLM_FUNC_QUALIFIER const tvec2<T>& tvec4<T>::_yz() const { return *reinterpret_cast<const tvec2<T>*>(&y); }
+	template <typename T> GLM_FUNC_QUALIFIER const tvec2<T>& tvec4<T>::_zw() const { return *reinterpret_cast<const tvec2<T>*>(&y); }
+
+
+	//////////////////////////////////////
 	// Binary arithmetic operators
 
 	template <typename T> 

@@ -244,6 +244,14 @@ namespace detail
 		GLM_FUNC_DECL tvec4<T> swizzle(comp X, comp Y, comp Z, comp W) const;
 		GLM_FUNC_DECL tref2<T> swizzle(comp X, comp Y);
 		GLM_FUNC_DECL tref3<T> swizzle(comp X, comp Y, comp Z);
+
+        //////////////////////////////////////
+        // l-value access
+
+        GLM_FUNC_DECL const tvec2<T>& _xy() const;
+        GLM_FUNC_DECL const tvec2<T>& _yz() const;
+        GLM_FUNC_DECL tvec2<T>& _xy();
+        GLM_FUNC_DECL tvec2<T>& _yz();
 	};
 
 	template <typename T>
