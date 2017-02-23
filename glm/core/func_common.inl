@@ -1190,7 +1190,7 @@ namespace detail
 		int const & exp
 	)
 	{
-		return std::frexp(x, exp);
+		return std::ldexp(x, exp);
 	}
 
 	template <typename T>
@@ -1200,7 +1200,7 @@ namespace detail
 		detail::tvec2<int> const & exp
 	)
 	{
-		return std::frexp(x, exp);
+		return std::ldexp(x, exp);
 	}
 
 	template <typename T>
@@ -1210,7 +1210,7 @@ namespace detail
 		detail::tvec3<int> const & exp
 	)
 	{
-		return std::frexp(x, exp);
+		return std::ldexp(x, exp);
 	}
 
 	template <typename T>
@@ -1220,7 +1220,7 @@ namespace detail
 		detail::tvec4<int> const & exp
 	)
 	{
-		return std::frexp(x, exp);
+		return std::ldexp(x, exp);
 	}
 
 }//namespace glm
