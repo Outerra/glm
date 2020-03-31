@@ -12,6 +12,17 @@
 
 #define GLM_SETUP_INCLUDED			GLM_VERSION
 
+
+
+//// OT ////
+
+#define GLM_FORCE_CTOR_INIT 1
+//#define GLM_FORCE_XYZW_ONLY 1
+
+//// OT ////
+
+
+
 ///////////////////////////////////////////////////////////////////////////////////
 // Active states
 
