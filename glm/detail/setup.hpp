@@ -6,11 +6,22 @@
 #define GLM_VERSION_MAJOR			0
 #define GLM_VERSION_MINOR			9
 #define GLM_VERSION_PATCH			9
-#define GLM_VERSION_REVISION		7
-#define GLM_VERSION					997
-#define GLM_VERSION_MESSAGE			"GLM: version 0.9.9.7"
+#define GLM_VERSION_REVISION		8
+#define GLM_VERSION					998
+#define GLM_VERSION_MESSAGE			"GLM: version 0.9.9.8"
 
 #define GLM_SETUP_INCLUDED			GLM_VERSION
+
+
+
+//// OT ////
+
+#define GLM_FORCE_CTOR_INIT 1
+//#define GLM_FORCE_XYZW_ONLY 1
+
+//// OT ////
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////
 // Active states

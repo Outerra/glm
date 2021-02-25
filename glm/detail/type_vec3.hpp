@@ -89,8 +89,8 @@ namespace glm
 		const vec<2, T, Q>& _xy() const { return *reinterpret_cast<const vec<2, T, Q>*>(&x); }
 		const vec<2, T, Q>& _yz() const { return *reinterpret_cast<const vec<2, T, Q>*>(&y); }
 
-		vec<2, T, Q>& _xy() { return *reinterpret_cast<const vec<2, T, Q>*>(&x); }
-		vec<2, T, Q>& _yz() { return *reinterpret_cast<const vec<2, T, Q>*>(&y); }
+		vec<2, T, Q>& _xy() { return *reinterpret_cast<vec<2, T, Q>*>(&x); }
+		vec<2, T, Q>& _yz() { return *reinterpret_cast<vec<2, T, Q>*>(&y); }
 
 		// -- Component accesses --
 

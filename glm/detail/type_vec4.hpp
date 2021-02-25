@@ -88,15 +88,15 @@ namespace glm
 		const vec<2, T, Q>& _yz() const { return *reinterpret_cast<const vec<2, T, Q>*>(&y); }
 		const vec<2, T, Q>& _zw() const { return *reinterpret_cast<const vec<2, T, Q>*>(&z); }
 
-		vec<2, T, Q>& _xy() { return *reinterpret_cast<const vec<2, T, Q>*>(&x); }
-		vec<2, T, Q>& _yz() { return *reinterpret_cast<const vec<2, T, Q>*>(&y); }
-		vec<2, T, Q>& _zw() { return *reinterpret_cast<const vec<2, T, Q>*>(&z); }
+		vec<2, T, Q>& _xy() { return *reinterpret_cast<vec<2, T, Q>*>(&x); }
+		vec<2, T, Q>& _yz() { return *reinterpret_cast<vec<2, T, Q>*>(&y); }
+		vec<2, T, Q>& _zw() { return *reinterpret_cast<vec<2, T, Q>*>(&z); }
 
 		const vec<3, T, Q>& _xyz() const { return *reinterpret_cast<const vec<3, T, Q>*>(&x); }
 		const vec<3, T, Q>& _yzw() const { return *reinterpret_cast<const vec<3, T, Q>*>(&y); }
 
-		vec<3, T, Q>& _xyz() { return *reinterpret_cast<const vec<3, T, Q>*>(&x); }
-		vec<3, T, Q>& _yzw() { return *reinterpret_cast<const vec<3, T, Q>*>(&y); }
+		vec<3, T, Q>& _xyz() { return *reinterpret_cast<vec<3, T, Q>*>(&x); }
+		vec<3, T, Q>& _yzw() { return *reinterpret_cast<vec<3, T, Q>*>(&y); }
 
 		// -- Component accesses --
 
